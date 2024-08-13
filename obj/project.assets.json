@@ -476,11 +476,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bongani Tabu\\Downloads\\CMPG223_Group_10-main\\CMPG223_Group_10-main\\iSintu_Bookings\\iSintu_Bookings.csproj",
+      "projectUniqueName": "C:\\Users\\Bongani Tabu\\Source\\Repos\\SeeSharp-Pilot01\\Group_18_CMPG_223\\iSintu_Bookings.csproj",
       "projectName": "iSintu_Bookings",
-      "projectPath": "C:\\Users\\Bongani Tabu\\Downloads\\CMPG223_Group_10-main\\CMPG223_Group_10-main\\iSintu_Bookings\\iSintu_Bookings.csproj",
+      "projectPath": "C:\\Users\\Bongani Tabu\\Source\\Repos\\SeeSharp-Pilot01\\Group_18_CMPG_223\\iSintu_Bookings.csproj",
       "packagesPath": "C:\\Users\\Bongani Tabu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bongani Tabu\\Downloads\\CMPG223_Group_10-main\\CMPG223_Group_10-main\\iSintu_Bookings\\obj\\",
+      "outputPath": "C:\\Users\\Bongani Tabu\\Source\\Repos\\SeeSharp-Pilot01\\Group_18_CMPG_223\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
