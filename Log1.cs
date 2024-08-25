@@ -19,7 +19,7 @@ namespace iSintu_Bookings
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-B74G1VM;Initial Catalog=IsintuBookings;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=ASUSX515-TABU;Initial Catalog=IsintuBookings;Integrated Security=True");
         SqlDataAdapter myAdapter;
         DataTable mydataSet;
         public static string username, password;
