@@ -92,3 +92,4 @@ C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\
 C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\net6.0-windows\iSintu_Bookings.csproj.CopyComplete
 C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\net6.0-windows\iSintu_Bookings.genruntimeconfig.cache
 C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\net6.0-windows\ref\iSintu_Bookings.dll
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\net6.0-windows\iSintu_Bookings.Admin1.resources

@@ -19,7 +19,7 @@ namespace iSintu_Bookings
             InitializeComponent();
         }
 
-       
+
 
 
 
@@ -33,7 +33,7 @@ namespace iSintu_Bookings
         SqlDataAdapter myAdapter;
         DataTable mydataSet;
 
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -58,7 +58,7 @@ namespace iSintu_Bookings
                 {
 
                     connection.Open();
-                    string query = "INSERT INTO Guest (guest_name, guest_surname, guest_email, g_phone_number, guest_address, guest_nationality, guest_preferences) VALUES (@Name, @Surname, @Email, @Cell, @Address, @Nationality, @Preferences)";
+                    string query = "INSERT INTO Guest (guest_name, guest_surname, guest_email, g_phone_number, guest_address, guest_nationality, guest_preferences, guest_password) VALUES (@Name, @Surname, @Email, @Cell, @Address, @Nationality, @Preferences, @Password)";
                     SqlCommand cmd = new SqlCommand(query, connection);
                     //cmd.Parameters.AddWithValue("@ID", lastRowIndex); S/O TO TEBZA!!
                     cmd.Parameters.AddWithValue("@Name", Name_txt.Text);
@@ -68,10 +68,10 @@ namespace iSintu_Bookings
                     cmd.Parameters.AddWithValue("@Address", Address_txt.Text);
                     cmd.Parameters.AddWithValue("@Nationality", Nationality_txt.Text);
                     cmd.Parameters.AddWithValue("@Preferences", Preferences_txt.Text);
-
-                    MessageBox.Show("Guest successfully registered");
+                    cmd.Parameters.AddWithValue("@Password", Password_txt.Text);
+                    MessageBox.Show("Guest successfully registered, please note your username is: " + Email_txt.Text); //Users username is their email
                     // Your code to execute after opening the connection
-                    
+
                     cmd.ExecuteNonQuery();
                     connection.Close();
 
@@ -84,23 +84,8 @@ namespace iSintu_Bookings
 
 
             }
-            /*
-            con = new SqlConnection();
-            con.Open();
-            string query = "INSERT INTO Guest (guest_id, guest_name, guest_surname, guest_email, g_phone_number, guest_address, guest_nationality, guest_preferences) VALUES (@Pass, @Name, @Surname, @Email, @Cell, @Address, @Nationality, @Preferences)";
-            SqlCommand cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@ID", Cell_txt.Text);
-            cmd.Parameters.AddWithValue("@Name", Name_txt.Text);
-            cmd.Parameters.AddWithValue("@Surname", Surname_txt.Text);
-            cmd.Parameters.AddWithValue("@Email", Email_txt.Text);
-            cmd.Parameters.AddWithValue("@Cell", Cell_txt.Text);
-            cmd.Parameters.AddWithValue("@Address", Address_txt.Text);
-            cmd.Parameters.AddWithValue("@Nationality", Nationality_txt.Text);
-            cmd.Parameters.AddWithValue("@Preferences", Preferences_txt.Text);
 
-            //Not sure what to do with the check in checkbox just enter recommended code here.
-            cmd.ExecuteNonQuery();
-            */
+
             con.Close();
 
         }
@@ -121,6 +106,16 @@ namespace iSintu_Bookings
         }
 
         private void RegisterGuest_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cell_txt_TextChanged(object sender, EventArgs e)
         {
 
         }
