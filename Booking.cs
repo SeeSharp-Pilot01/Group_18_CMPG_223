@@ -157,6 +157,7 @@ namespace iSintu_Bookings
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*
             if (expG_chb.Checked)
             {
                 expGuest = 600;
@@ -242,7 +243,7 @@ namespace iSintu_Bookings
                 MessageBox.Show("Please select a guesthouse type. ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
+            */
 
 
             Activities activities = new Activities();

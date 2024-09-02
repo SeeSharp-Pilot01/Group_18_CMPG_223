@@ -78,3 +78,17 @@ C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\
 C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\net6.0-windows\iSintu_Bookings.dll
 C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\net6.0-windows\refint\iSintu_Bookings.dll
 C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\net6.0-windows\iSintu_Bookings.pdb
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\iSintu_Bookings.exe
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\iSintu_Bookings.deps.json
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\iSintu_Bookings.runtimeconfig.json
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\iSintu_Bookings.dll
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\iSintu_Bookings.pdb
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\net6.0-windows\iSintu_Bookings.csproj.CopyComplete
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\net6.0-windows\iSintu_Bookings.genruntimeconfig.cache
+C:\Users\Bongani Tabu\Source\Repos\SeeSharp-Pilot01\Group_18_CMPG_223\obj\Debug\net6.0-windows\ref\iSintu_Bookings.dll

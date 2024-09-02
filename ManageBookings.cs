@@ -26,10 +26,11 @@ namespace iSintu_Bookings
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            con.Open();
             string query = "";
-            if (Name_txt.Text != "")
+            if (Name_txt.Text != " ")
             {
-                query = "UPDATE Guests SET guest_name = '" + Name_txt.Text;
+                query = "UPDATE Guests SET guest_name = '" + Name_txt.Text ;
                 SqlCommand cmd1 = new SqlCommand(query, con);
                 cmd1.ExecuteNonQuery();
             }
@@ -51,7 +52,10 @@ namespace iSintu_Bookings
                 SqlCommand cmd4 = new SqlCommand(query, con);
                 cmd4.ExecuteNonQuery();
             }
+
+            con.Close();
         }
+
 
         private void Delete_btn_Click(object sender, EventArgs e)
         {
@@ -92,7 +96,7 @@ namespace iSintu_Bookings
             if(textBox1.Text != "")
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Guest WHERE [guest_name] LIKE @Search + '%",con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Guest WHERE [guest_name] LIKE @Search + '%'",con);
                 cmd.Parameters.AddWithValue("@Search", textBox1.Text.Trim());
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();

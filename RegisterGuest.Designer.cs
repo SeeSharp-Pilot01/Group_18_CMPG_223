@@ -28,143 +28,199 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Surname_txt = new System.Windows.Forms.TextBox();
-            this.Email_txt = new System.Windows.Forms.TextBox();
-            this.Name_txt = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Passw_txt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Confirm_txt = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            Surname_txt = new TextBox();
+            Email_txt = new TextBox();
+            Name_txt = new TextBox();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            button1 = new Button();
+            label2 = new Label();
+            label6 = new Label();
+            Cell_txt = new TextBox();
+            label1 = new Label();
+            Address_txt = new TextBox();
+            label7 = new Label();
+            Nationality_txt = new TextBox();
+            label8 = new Label();
+            Preferences_txt = new TextBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
             // 
             // Surname_txt
             // 
-            this.Surname_txt.Location = new System.Drawing.Point(350, 136);
-            this.Surname_txt.Name = "Surname_txt";
-            this.Surname_txt.Size = new System.Drawing.Size(100, 23);
-            this.Surname_txt.TabIndex = 1;
+            Surname_txt.Location = new Point(350, 136);
+            Surname_txt.Name = "Surname_txt";
+            Surname_txt.Size = new Size(186, 23);
+            Surname_txt.TabIndex = 1;
             // 
             // Email_txt
             // 
-            this.Email_txt.Location = new System.Drawing.Point(350, 192);
-            this.Email_txt.Name = "Email_txt";
-            this.Email_txt.Size = new System.Drawing.Size(100, 23);
-            this.Email_txt.TabIndex = 2;
+            Email_txt.Location = new Point(350, 192);
+            Email_txt.Name = "Email_txt";
+            Email_txt.Size = new Size(186, 23);
+            Email_txt.TabIndex = 2;
             // 
             // Name_txt
             // 
-            this.Name_txt.Location = new System.Drawing.Point(350, 81);
-            this.Name_txt.Name = "Name_txt";
-            this.Name_txt.Size = new System.Drawing.Size(100, 23);
-            this.Name_txt.TabIndex = 3;
+            Name_txt.Location = new Point(350, 84);
+            Name_txt.Name = "Name_txt";
+            Name_txt.Size = new Size(186, 23);
+            Name_txt.TabIndex = 3;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(213, 195);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 15);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Email";
+            label3.AutoSize = true;
+            label3.Location = new Point(213, 195);
+            label3.Name = "label3";
+            label3.Size = new Size(36, 15);
+            label3.TabIndex = 7;
+            label3.Text = "Email";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(213, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 15);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Name";
+            label4.AutoSize = true;
+            label4.Location = new Point(213, 84);
+            label4.Name = "label4";
+            label4.Size = new Size(39, 15);
+            label4.TabIndex = 8;
+            label4.Text = "Name";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(213, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 15);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Surname";
+            label5.AutoSize = true;
+            label5.Location = new Point(213, 136);
+            label5.Name = "label5";
+            label5.Size = new Size(54, 15);
+            label5.TabIndex = 9;
+            label5.Text = "Surname";
             // 
             // button1
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(354, 384);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Register";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Location = new Point(372, 488);
+            button1.Name = "button1";
+            button1.Size = new Size(100, 23);
+            button1.TabIndex = 10;
+            button1.Text = "Register";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(213, 33);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(368, 21);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Create an account with us on Isintu Bookings ";
+            label2.AutoSize = true;
+            label2.Font = new Font("Elephant", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(213, 33);
+            label2.Name = "label2";
+            label2.Size = new Size(368, 21);
+            label2.TabIndex = 11;
+            label2.Text = "Create an account with us on Isintu Bookings ";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(213, 254);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 15);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Password";
+            label6.AutoSize = true;
+            label6.Location = new Point(213, 254);
+            label6.Name = "label6";
+            label6.Size = new Size(88, 15);
+            label6.TabIndex = 12;
+            label6.Text = "Phone Number";
+            label6.Click += label6_Click;
             // 
-            // Passw_txt
+            // Cell_txt
             // 
-            this.Passw_txt.Location = new System.Drawing.Point(350, 251);
-            this.Passw_txt.Name = "Passw_txt";
-            this.Passw_txt.Size = new System.Drawing.Size(100, 23);
-            this.Passw_txt.TabIndex = 13;
+            Cell_txt.Location = new Point(350, 251);
+            Cell_txt.Name = "Cell_txt";
+            Cell_txt.Size = new Size(186, 23);
+            Cell_txt.TabIndex = 13;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(213, 314);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 15);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Confirm Password";
+            label1.AutoSize = true;
+            label1.Location = new Point(213, 314);
+            label1.Name = "label1";
+            label1.Size = new Size(49, 15);
+            label1.TabIndex = 14;
+            label1.Text = "Address";
+            label1.Click += label1_Click;
             // 
-            // Confirm_txt
+            // Address_txt
             // 
-            this.Confirm_txt.Location = new System.Drawing.Point(350, 311);
-            this.Confirm_txt.Name = "Confirm_txt";
-            this.Confirm_txt.Size = new System.Drawing.Size(100, 23);
-            this.Confirm_txt.TabIndex = 15;
+            Address_txt.Location = new Point(350, 311);
+            Address_txt.Name = "Address_txt";
+            Address_txt.Size = new Size(186, 23);
+            Address_txt.TabIndex = 15;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(213, 380);
+            label7.Name = "label7";
+            label7.Size = new Size(98, 15);
+            label7.TabIndex = 16;
+            label7.Text = "Guest Nationality";
+            // 
+            // Nationality_txt
+            // 
+            Nationality_txt.Location = new Point(350, 380);
+            Nationality_txt.Name = "Nationality_txt";
+            Nationality_txt.Size = new Size(186, 23);
+            Nationality_txt.TabIndex = 17;
+            Nationality_txt.TextChanged += textBox1_TextChanged;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(213, 451);
+            label8.Name = "label8";
+            label8.Size = new Size(101, 15);
+            label8.TabIndex = 18;
+            label8.Text = "Guest Preferences";
+            // 
+            // Preferences_txt
+            // 
+            Preferences_txt.Location = new Point(350, 443);
+            Preferences_txt.Name = "Preferences_txt";
+            Preferences_txt.Size = new Size(186, 23);
+            Preferences_txt.TabIndex = 19;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(664, 314);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(240, 150);
+            dataGridView1.TabIndex = 20;
             // 
             // RegisterGuest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Confirm_txt);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Passw_txt);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Name_txt);
-            this.Controls.Add(this.Email_txt);
-            this.Controls.Add(this.Surname_txt);
-            this.Name = "RegisterGuest";
-            this.Text = "RegisterGuest";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(959, 542);
+            Controls.Add(dataGridView1);
+            Controls.Add(Preferences_txt);
+            Controls.Add(label8);
+            Controls.Add(Nationality_txt);
+            Controls.Add(label7);
+            Controls.Add(Address_txt);
+            Controls.Add(label1);
+            Controls.Add(Cell_txt);
+            Controls.Add(label6);
+            Controls.Add(label2);
+            Controls.Add(button1);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(Name_txt);
+            Controls.Add(Email_txt);
+            Controls.Add(Surname_txt);
+            Name = "RegisterGuest";
+            Text = "RegisterGuest";
+            Load += RegisterGuest_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -178,8 +234,13 @@
         private Button button1;
         private Label label2;
         private Label label6;
-        private TextBox Passw_txt;
+        private TextBox Cell_txt;
         private Label label1;
-        private TextBox Confirm_txt;
+        private TextBox Address_txt;
+        private Label label7;
+        private TextBox Nationality_txt;
+        private Label label8;
+        private TextBox Preferences_txt;
+        private DataGridView dataGridView1;
     }
 }

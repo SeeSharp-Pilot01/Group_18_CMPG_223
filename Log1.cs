@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace iSintu_Bookings
 {
-    public partial class Log1: Form
+    public partial class Log1 : Form
     {
         public Log1()
         {
@@ -89,6 +89,12 @@ namespace iSintu_Bookings
             RegisterGuest register = new RegisterGuest();
             register.Show();
             this.Hide();
+        }
+
+        private void Log1_Load(object sender, EventArgs e)
+        {
+            ManageBookings managebookings = new ManageBookings();
+            managebookings.Show();
         }
     }
 }
