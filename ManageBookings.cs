@@ -130,7 +130,7 @@ namespace iSintu_Bookings
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adp.Fill(ds);
-                dataGridView1.DataSource = ds;
+                dataGridView1.DataSource = ds.Tables[0];
                 textBox1.Focus();
                 con.Close();
             }
@@ -151,7 +151,7 @@ namespace iSintu_Bookings
 
             MessageBox.Show("Sorted in ascending order succesfuly executed");
             con.Close();
-            Display();
+            
 
         }
 
@@ -169,7 +169,7 @@ namespace iSintu_Bookings
             dataGridView1.DataSource = dtDesc;
             MessageBox.Show("Sorted in decending order succesfuly executed");
             con.Close();
-            Display();
+            
         }
     }
 }
