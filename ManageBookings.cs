@@ -24,13 +24,24 @@ namespace iSintu_Bookings
 
         int i = 0;
 
+        public void Display()
+        {
+            con.Open();
+            SqlCommand comm = new SqlCommand("SELECT * FROM Guest", con);
+            SqlDataAdapter myAdapter = new SqlDataAdapter(comm);
+            DataTable dt = new DataTable();
+            myAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+            con.Close();
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             con.Open();
             string query = "";
             if (Name_txt.Text != "")
             {
-                //query = "UPDATE Guests WHERE guest_id= '"+i+"' SET guest_name = '" + Name_txt.Text +"'" ;
                 query = "UPDATE Guest SET guest_name = @Name WHERE guest_id = @Id";
                 SqlCommand cmd1 = new SqlCommand(query, con);
 
@@ -38,9 +49,9 @@ namespace iSintu_Bookings
                 cmd1.Parameters.AddWithValue("@Id", i);
                 cmd1.ExecuteNonQuery();
             }
-            else if (Surname_txt.Text != "")
+            if (Surname_txt.Text != "")
             {
-                //query = "UPDATE Guests WHERE guest_id= '"+i+"' SET guest_surname = '" + Surname_txt.Text;
+                
                 query = "UPDATE Guest SET guest_surname = @Surname WHERE guest_id = @Id";
                 SqlCommand cmd2 = new SqlCommand(query,con);
 
@@ -48,9 +59,9 @@ namespace iSintu_Bookings
                 cmd2.Parameters.AddWithValue("@Id", i);
                 cmd2.ExecuteNonQuery();
             }
-            else if (Passw_txt.Text != "")
+            if (Passw_txt.Text != "")
             {
-                //query = "UPDATE Guests WHERE guest_id= '"+i+"' SET guest_password = '" + Passw_txt.Text;
+                
                 query = "UPDATE Guest SET guest_password = @Password WHERE guest_id = @Id";
                 SqlCommand cmd3 = new SqlCommand(query, con);
 
@@ -60,7 +71,7 @@ namespace iSintu_Bookings
             }
             if (Email_Txt.Text != "")
             {
-                //query = "UPDATE Guests WHERE guest_id= '"+i+"' SET guest_email = '" + Email_Txt.Text;
+               
                 query = "UPDATE Guest SET guest_email = @Email WHERE guest_id = @Id";
                 SqlCommand cmd4 = new SqlCommand(query, con);
 
@@ -68,8 +79,15 @@ namespace iSintu_Bookings
                 cmd4.Parameters.AddWithValue("@Id", i);
                 cmd4.ExecuteNonQuery();
             }
-
             con.Close();
+
+            Passw_txt.Clear();
+            Email_Txt.Clear();
+            Name_txt.Clear();
+            Surname_txt.Clear();
+
+            Display();
+
         }
 
 
@@ -81,6 +99,7 @@ namespace iSintu_Bookings
             MessageBox.Show("Delete succesfuly executed");
 
             con.Close();
+            Display();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -96,15 +115,9 @@ namespace iSintu_Bookings
 
         private void Display_btn_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand comm = new SqlCommand("SELECT * FROM Guest", con);
-            SqlDataAdapter myAdapter = new SqlDataAdapter(comm);
-            DataTable dt = new DataTable();
-            myAdapter.Fill(dt);
 
-            dataGridView1.DataSource = dt;
+            Display();
 
-            con.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -138,6 +151,7 @@ namespace iSintu_Bookings
 
             MessageBox.Show("Sorted in ascending order succesfuly executed");
             con.Close();
+            Display();
 
         }
 
@@ -155,6 +169,7 @@ namespace iSintu_Bookings
             dataGridView1.DataSource = dtDesc;
             MessageBox.Show("Sorted in decending order succesfuly executed");
             con.Close();
+            Display();
         }
     }
 }
