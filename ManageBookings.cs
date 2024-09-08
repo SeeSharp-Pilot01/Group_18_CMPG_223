@@ -45,15 +45,15 @@ namespace iSintu_Bookings
                 query = "UPDATE Guest SET guest_name = @Name WHERE guest_id = @Id";
                 SqlCommand cmd1 = new SqlCommand(query, con);
 
-                cmd1.Parameters.AddWithValue("@Name",Name_txt.Text);
+                cmd1.Parameters.AddWithValue("@Name", Name_txt.Text);
                 cmd1.Parameters.AddWithValue("@Id", i);
                 cmd1.ExecuteNonQuery();
             }
             if (Surname_txt.Text != "")
             {
-                
+
                 query = "UPDATE Guest SET guest_surname = @Surname WHERE guest_id = @Id";
-                SqlCommand cmd2 = new SqlCommand(query,con);
+                SqlCommand cmd2 = new SqlCommand(query, con);
 
                 cmd2.Parameters.AddWithValue("@Surname", Surname_txt.Text);
                 cmd2.Parameters.AddWithValue("@Id", i);
@@ -61,7 +61,7 @@ namespace iSintu_Bookings
             }
             if (Passw_txt.Text != "")
             {
-                
+
                 query = "UPDATE Guest SET guest_password = @Password WHERE guest_id = @Id";
                 SqlCommand cmd3 = new SqlCommand(query, con);
 
@@ -71,7 +71,7 @@ namespace iSintu_Bookings
             }
             if (Email_Txt.Text != "")
             {
-               
+
                 query = "UPDATE Guest SET guest_email = @Email WHERE guest_id = @Id";
                 SqlCommand cmd4 = new SqlCommand(query, con);
 
@@ -122,10 +122,10 @@ namespace iSintu_Bookings
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if(textBox1.Text != "")
+            if (textBox1.Text != "")
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Guest WHERE [guest_name] LIKE @Search + '%'",con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Guest WHERE [guest_name] LIKE @Search + '%'", con);
                 cmd.Parameters.AddWithValue("@Search", textBox1.Text.Trim());
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
@@ -140,10 +140,10 @@ namespace iSintu_Bookings
         {
             con.Open();
             string query = "SELECT * FROM Guest ORDER BY guest_surname ASC";
-            SqlCommand cmd = new SqlCommand(query,con);
+            SqlCommand cmd = new SqlCommand(query, con);
             SqlDataAdapter myAdapter1 = new SqlDataAdapter();
             DataTable dt1 = new DataTable();
-            
+
             myAdapter1.SelectCommand = cmd;
             myAdapter1.Fill(dt1);
 
@@ -151,7 +151,7 @@ namespace iSintu_Bookings
 
             MessageBox.Show("Sorted in ascending order succesfuly executed");
             con.Close();
-            
+
 
         }
 
@@ -169,7 +169,7 @@ namespace iSintu_Bookings
             dataGridView1.DataSource = dtDesc;
             MessageBox.Show("Sorted in decending order succesfuly executed");
             con.Close();
-            
+
         }
     }
 }

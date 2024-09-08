@@ -37,7 +37,12 @@ namespace iSintu_Bookings
             Act_lbl.Text = Activities.activityType;
             CostH_lbl.Text = Booking.housePrice.ToString();
             costA_lbl.Text = Booking.areaPrice.ToString();
-            costAct_lbl.Text= Activities.costOfActivities.ToString();
+            costAct_lbl.Text = Activities.costOfActivities.ToString();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

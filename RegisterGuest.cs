@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -33,12 +34,17 @@ namespace iSintu_Bookings
         SqlDataAdapter myAdapter;
         DataTable mydataSet;
 
-
+        private bool IsValidEmail(string email)
+        {
+            // Regular expression for validating email format
+            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, pattern);
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
-            con.Open();
+            /*con.Open();
             SqlCommand comm = new SqlCommand("SELECT * FROM Guest", con);
             SqlDataAdapter myAdapter = new SqlDataAdapter(comm);
             DataTable dt = new DataTable();
@@ -49,13 +55,15 @@ namespace iSintu_Bookings
             con.Close();
             int lastRowIndex = dataGridView1.Rows.Count - 1;
 
-            MessageBox.Show("Index: " + lastRowIndex);
+            MessageBox.Show("Index: " + lastRowIndex);*/
 
             string connectionString = "Data Source=ASUSX515-TABU;Initial Catalog=IsintuBookings;Integrated Security=True"; // Replace with your actual connection string
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
+
+
 
                     connection.Open();
                     string query = "INSERT INTO Guest (guest_name, guest_surname, guest_email, g_phone_number, guest_address, guest_nationality, guest_preferences, guest_password) VALUES (@Name, @Surname, @Email, @Cell, @Address, @Nationality, @Preferences, @Password)";
@@ -66,10 +74,10 @@ namespace iSintu_Bookings
                     cmd.Parameters.AddWithValue("@Email", Email_txt.Text);
                     cmd.Parameters.AddWithValue("@Cell", Cell_txt.Text);
                     cmd.Parameters.AddWithValue("@Address", Address_txt.Text);
-                    cmd.Parameters.AddWithValue("@Nationality", Nationality_txt.Text);
+                    cmd.Parameters.AddWithValue("@Nationality", cmbx1.SelectedText);
                     cmd.Parameters.AddWithValue("@Preferences", Preferences_txt.Text);
                     cmd.Parameters.AddWithValue("@Password", Password_txt.Text);
-                    MessageBox.Show("Guest successfully registered, please note your username is: " + Email_txt.Text); //Users username is their email
+                    MessageBox.Show("Guest successfully registered, please note your username is: " + cmbx1.SelectedText); //Users username is their email
                     // Your code to execute after opening the connection
 
                     cmd.ExecuteNonQuery();

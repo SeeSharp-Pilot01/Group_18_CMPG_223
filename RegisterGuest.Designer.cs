@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterGuest));
             Surname_txt = new TextBox();
             Email_txt = new TextBox();
             Name_txt = new TextBox();
@@ -41,13 +42,11 @@
             label1 = new Label();
             Address_txt = new TextBox();
             label7 = new Label();
-            Nationality_txt = new TextBox();
             label8 = new Label();
             Preferences_txt = new TextBox();
-            dataGridView1 = new DataGridView();
             label9 = new Label();
             Password_txt = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            cmbx1 = new ComboBox();
             SuspendLayout();
             // 
             // Surname_txt
@@ -164,14 +163,6 @@
             label7.TabIndex = 16;
             label7.Text = "Guest Nationality";
             // 
-            // Nationality_txt
-            // 
-            Nationality_txt.Location = new Point(350, 324);
-            Nationality_txt.Name = "Nationality_txt";
-            Nationality_txt.Size = new Size(186, 23);
-            Nationality_txt.TabIndex = 17;
-            Nationality_txt.TextChanged += textBox1_TextChanged;
-            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -187,15 +178,6 @@
             Preferences_txt.Name = "Preferences_txt";
             Preferences_txt.Size = new Size(186, 23);
             Preferences_txt.TabIndex = 19;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(664, 314);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(240, 150);
-            dataGridView1.TabIndex = 20;
             // 
             // label9
             // 
@@ -213,17 +195,27 @@
             Password_txt.Size = new Size(186, 23);
             Password_txt.TabIndex = 22;
             // 
+            // cmbx1
+            // 
+            cmbx1.FormattingEnabled = true;
+            cmbx1.Items.AddRange(new object[] { "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo (Congo-Brazzaville)", "Costa Rica", "Croatia", "Cuba", "Czech", " Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor (Timor-Leste)", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini (Swaziland)", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, ", "North", "Korea", "South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar (Burma)", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint ", "Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Ugand", "Ukraine", "United Arab Emirates", "United Kingdom", "United States of America", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe" });
+            cmbx1.Location = new Point(350, 324);
+            cmbx1.Name = "cmbx1";
+            cmbx1.Size = new Size(186, 23);
+            cmbx1.TabIndex = 23;
+            // 
             // RegisterGuest
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(959, 542);
+            Controls.Add(cmbx1);
             Controls.Add(Password_txt);
             Controls.Add(label9);
-            Controls.Add(dataGridView1);
             Controls.Add(Preferences_txt);
             Controls.Add(label8);
-            Controls.Add(Nationality_txt);
             Controls.Add(label7);
             Controls.Add(Address_txt);
             Controls.Add(label1);
@@ -240,7 +232,6 @@
             Name = "RegisterGuest";
             Text = "RegisterGuest";
             Load += RegisterGuest_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -260,11 +251,10 @@
         private Label label1;
         private TextBox Address_txt;
         private Label label7;
-        private TextBox Nationality_txt;
         private Label label8;
         private TextBox Preferences_txt;
-        private DataGridView dataGridView1;
         private Label label9;
         private TextBox Password_txt;
+        private ComboBox cmbx1;
     }
 }

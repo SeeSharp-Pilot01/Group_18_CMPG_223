@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Log1));
             groupBox1 = new GroupBox();
             Hide_cbx = new CheckBox();
             groupBox2 = new GroupBox();
@@ -47,6 +48,8 @@
             // groupBox1
             // 
             groupBox1.BackColor = SystemColors.AppWorkspace;
+            groupBox1.BackgroundImage = (Image)resources.GetObject("groupBox1.BackgroundImage");
+            groupBox1.BackgroundImageLayout = ImageLayout.Stretch;
             groupBox1.Controls.Add(Hide_cbx);
             groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(label3);
@@ -106,9 +109,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(160, 42);
+            label3.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(116, 45);
             label3.Name = "label3";
-            label3.Size = new Size(144, 15);
+            label3.Size = new Size(321, 29);
             label3.TabIndex = 16;
             label3.Text = "Sign in to Isintu Bookings ";
             // 
@@ -168,6 +172,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(574, 514);
             Controls.Add(groupBox1);
             Name = "Log1";

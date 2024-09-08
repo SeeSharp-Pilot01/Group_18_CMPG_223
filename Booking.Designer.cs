@@ -29,450 +29,337 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.resN_rdb = new System.Windows.Forms.RadioButton();
-            this.riverN_rdb = new System.Windows.Forms.RadioButton();
-            this.mtnN_rdb = new System.Windows.Forms.RadioButton();
-            this.resW_rdb = new System.Windows.Forms.RadioButton();
-            this.riverW_rdb = new System.Windows.Forms.RadioButton();
-            this.mtnW_rdb = new System.Windows.Forms.RadioButton();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.resE_rdb = new System.Windows.Forms.RadioButton();
-            this.riverE_rdb = new System.Windows.Forms.RadioButton();
-            this.mtnE_rdb = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.mtG_chb = new System.Windows.Forms.CheckBox();
-            this.ndG_chb = new System.Windows.Forms.CheckBox();
-            this.wbG_chb = new System.Windows.Forms.CheckBox();
-            this.expG_chb = new System.Windows.Forms.CheckBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            groupBox1 = new GroupBox();
+            label17 = new Label();
+            label16 = new Label();
+            label15 = new Label();
+            label14 = new Label();
+            nud_EG = new NumericUpDown();
+            nud_MV = new NumericUpDown();
+            nud_WBG = new NumericUpDown();
+            nud_NG = new NumericUpDown();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            mtG_chb = new CheckBox();
+            ndG_chb = new CheckBox();
+            wbG_chb = new CheckBox();
+            expG_chb = new CheckBox();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            dateTimePicker1 = new DateTimePicker();
+            label5 = new Label();
+            dateTimePicker2 = new DateTimePicker();
+            label6 = new Label();
+            button2 = new Button();
+            button3 = new Button();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)nud_EG).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nud_MV).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nud_WBG).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nud_NG).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.resN_rdb);
-            this.groupBox1.Controls.Add(this.riverN_rdb);
-            this.groupBox1.Controls.Add(this.mtnN_rdb);
-            this.groupBox1.Controls.Add(this.resW_rdb);
-            this.groupBox1.Controls.Add(this.riverW_rdb);
-            this.groupBox1.Controls.Add(this.mtnW_rdb);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.resE_rdb);
-            this.groupBox1.Controls.Add(this.riverE_rdb);
-            this.groupBox1.Controls.Add(this.mtnE_rdb);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.mtG_chb);
-            this.groupBox1.Controls.Add(this.ndG_chb);
-            this.groupBox1.Controls.Add(this.wbG_chb);
-            this.groupBox1.Controls.Add(this.expG_chb);
-            this.groupBox1.Controls.Add(this.pictureBox4);
-            this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(809, 746);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Guesthouses and Rates";
+            groupBox1.BackgroundImageLayout = ImageLayout.None;
+            groupBox1.Controls.Add(label17);
+            groupBox1.Controls.Add(label16);
+            groupBox1.Controls.Add(label15);
+            groupBox1.Controls.Add(label14);
+            groupBox1.Controls.Add(nud_EG);
+            groupBox1.Controls.Add(nud_MV);
+            groupBox1.Controls.Add(nud_WBG);
+            groupBox1.Controls.Add(nud_NG);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(mtG_chb);
+            groupBox1.Controls.Add(ndG_chb);
+            groupBox1.Controls.Add(wbG_chb);
+            groupBox1.Controls.Add(expG_chb);
+            groupBox1.Controls.Add(pictureBox4);
+            groupBox1.Controls.Add(pictureBox3);
+            groupBox1.Controls.Add(pictureBox2);
+            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Location = new Point(0, 1);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(809, 746);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Guesthouses and Rates";
+            groupBox1.Enter += groupBox1_Enter;
             // 
-            // label13
+            // label17
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(293, 124);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 15);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "R150 extra";
+            label17.AutoSize = true;
+            label17.Location = new Point(169, 616);
+            label17.Name = "label17";
+            label17.Size = new Size(38, 15);
+            label17.TabIndex = 45;
+            label17.Text = "Days: ";
+            label17.Click += label17_Click;
             // 
-            // label12
+            // label16
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(169, 690);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(198, 15);
-            this.label12.TabIndex = 35;
-            this.label12.Text = "Area already included in price above";
+            label16.AutoSize = true;
+            label16.Location = new Point(175, 277);
+            label16.Name = "label16";
+            label16.Size = new Size(38, 15);
+            label16.TabIndex = 44;
+            label16.Text = "Days: ";
             // 
-            // resN_rdb
+            // label15
             // 
-            this.resN_rdb.AutoSize = true;
-            this.resN_rdb.Location = new System.Drawing.Point(175, 477);
-            this.resN_rdb.Name = "resN_rdb";
-            this.resN_rdb.Size = new System.Drawing.Size(112, 19);
-            this.resN_rdb.TabIndex = 34;
-            this.resN_rdb.TabStop = true;
-            this.resN_rdb.Text = "Resedential Area";
-            this.resN_rdb.UseVisualStyleBackColor = true;
+            label15.AutoSize = true;
+            label15.Location = new Point(175, 446);
+            label15.Name = "label15";
+            label15.Size = new Size(38, 15);
+            label15.TabIndex = 43;
+            label15.Text = "Days: ";
+            label15.Click += label15_Click;
             // 
-            // riverN_rdb
+            // label14
             // 
-            this.riverN_rdb.AutoSize = true;
-            this.riverN_rdb.Location = new System.Drawing.Point(175, 501);
-            this.riverN_rdb.Name = "riverN_rdb";
-            this.riverN_rdb.Size = new System.Drawing.Size(90, 19);
-            this.riverN_rdb.TabIndex = 33;
-            this.riverN_rdb.TabStop = true;
-            this.riverN_rdb.Text = "Next to river";
-            this.riverN_rdb.UseVisualStyleBackColor = true;
+            label14.AutoSize = true;
+            label14.Location = new Point(175, 110);
+            label14.Name = "label14";
+            label14.Size = new Size(38, 15);
+            label14.TabIndex = 42;
+            label14.Text = "Days: ";
+            label14.Click += label14_Click;
             // 
-            // mtnN_rdb
+            // nud_EG
             // 
-            this.mtnN_rdb.AutoSize = true;
-            this.mtnN_rdb.Location = new System.Drawing.Point(175, 524);
-            this.mtnN_rdb.Name = "mtnN_rdb";
-            this.mtnN_rdb.Size = new System.Drawing.Size(102, 19);
-            this.mtnN_rdb.TabIndex = 32;
-            this.mtnN_rdb.TabStop = true;
-            this.mtnN_rdb.Text = "Mountain Side";
-            this.mtnN_rdb.UseVisualStyleBackColor = true;
+            nud_EG.Location = new Point(222, 110);
+            nud_EG.Name = "nud_EG";
+            nud_EG.Size = new Size(120, 23);
+            nud_EG.TabIndex = 41;
             // 
-            // resW_rdb
+            // nud_MV
             // 
-            this.resW_rdb.AutoSize = true;
-            this.resW_rdb.Location = new System.Drawing.Point(175, 280);
-            this.resW_rdb.Name = "resW_rdb";
-            this.resW_rdb.Size = new System.Drawing.Size(112, 19);
-            this.resW_rdb.TabIndex = 31;
-            this.resW_rdb.TabStop = true;
-            this.resW_rdb.Text = "Resedential Area";
-            this.resW_rdb.UseVisualStyleBackColor = true;
+            nud_MV.Location = new Point(219, 614);
+            nud_MV.Name = "nud_MV";
+            nud_MV.Size = new Size(120, 23);
+            nud_MV.TabIndex = 40;
             // 
-            // riverW_rdb
+            // nud_WBG
             // 
-            this.riverW_rdb.AutoSize = true;
-            this.riverW_rdb.Location = new System.Drawing.Point(175, 305);
-            this.riverW_rdb.Name = "riverW_rdb";
-            this.riverW_rdb.Size = new System.Drawing.Size(90, 19);
-            this.riverW_rdb.TabIndex = 30;
-            this.riverW_rdb.TabStop = true;
-            this.riverW_rdb.Text = "Next to river";
-            this.riverW_rdb.UseVisualStyleBackColor = true;
+            nud_WBG.Location = new Point(219, 277);
+            nud_WBG.Name = "nud_WBG";
+            nud_WBG.Size = new Size(120, 23);
+            nud_WBG.TabIndex = 39;
+            nud_WBG.ValueChanged += numericUpDown2_ValueChanged;
             // 
-            // mtnW_rdb
+            // nud_NG
             // 
-            this.mtnW_rdb.AutoSize = true;
-            this.mtnW_rdb.Location = new System.Drawing.Point(175, 330);
-            this.mtnW_rdb.Name = "mtnW_rdb";
-            this.mtnW_rdb.Size = new System.Drawing.Size(102, 19);
-            this.mtnW_rdb.TabIndex = 29;
-            this.mtnW_rdb.TabStop = true;
-            this.mtnW_rdb.Text = "Mountain Side";
-            this.mtnW_rdb.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(175, 459);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 15);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "Choose area:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(175, 262);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 15);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "Choose area:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(175, 102);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 15);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Choose area:";
-            // 
-            // resE_rdb
-            // 
-            this.resE_rdb.AutoSize = true;
-            this.resE_rdb.Location = new System.Drawing.Point(175, 120);
-            this.resE_rdb.Name = "resE_rdb";
-            this.resE_rdb.Size = new System.Drawing.Size(112, 19);
-            this.resE_rdb.TabIndex = 25;
-            this.resE_rdb.TabStop = true;
-            this.resE_rdb.Text = "Resedential Area";
-            this.resE_rdb.UseVisualStyleBackColor = true;
-            // 
-            // riverE_rdb
-            // 
-            this.riverE_rdb.AutoSize = true;
-            this.riverE_rdb.Location = new System.Drawing.Point(175, 144);
-            this.riverE_rdb.Name = "riverE_rdb";
-            this.riverE_rdb.Size = new System.Drawing.Size(90, 19);
-            this.riverE_rdb.TabIndex = 24;
-            this.riverE_rdb.TabStop = true;
-            this.riverE_rdb.Text = "Next to river";
-            this.riverE_rdb.UseVisualStyleBackColor = true;
-            // 
-            // mtnE_rdb
-            // 
-            this.mtnE_rdb.AutoSize = true;
-            this.mtnE_rdb.Location = new System.Drawing.Point(175, 167);
-            this.mtnE_rdb.Name = "mtnE_rdb";
-            this.mtnE_rdb.Size = new System.Drawing.Size(102, 19);
-            this.mtnE_rdb.TabIndex = 23;
-            this.mtnE_rdb.TabStop = true;
-            this.mtnE_rdb.Text = "Mountain Side";
-            this.mtnE_rdb.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(169, 663);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 15);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Price: R1200 per night";
+            nud_NG.Location = new Point(222, 446);
+            nud_NG.Name = "nud_NG";
+            nud_NG.Size = new Size(120, 23);
+            nud_NG.TabIndex = 27;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(175, 432);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 15);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Price: R950 per night";
+            label3.AutoSize = true;
+            label3.Location = new Point(175, 419);
+            label3.Name = "label3";
+            label3.Size = new Size(115, 15);
+            label3.TabIndex = 21;
+            label3.Text = "Price: R950 per night";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(175, 238);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 15);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Price: R800 per night";
+            label2.AutoSize = true;
+            label2.Location = new Point(175, 240);
+            label2.Name = "label2";
+            label2.Size = new Size(115, 15);
+            label2.TabIndex = 20;
+            label2.Text = "Price: R800 per night";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(175, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 15);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Price: R600 per night";
+            label1.AutoSize = true;
+            label1.Location = new Point(175, 69);
+            label1.Name = "label1";
+            label1.Size = new Size(115, 15);
+            label1.TabIndex = 16;
+            label1.Text = "Price: R600 per night";
             // 
             // mtG_chb
             // 
-            this.mtG_chb.AutoSize = true;
-            this.mtG_chb.Location = new System.Drawing.Point(175, 626);
-            this.mtG_chb.Name = "mtG_chb";
-            this.mtG_chb.Size = new System.Drawing.Size(103, 19);
-            this.mtG_chb.TabIndex = 15;
-            this.mtG_chb.Text = "Mountain Villa";
-            this.mtG_chb.UseVisualStyleBackColor = true;
+            mtG_chb.AutoSize = true;
+            mtG_chb.Location = new Point(175, 578);
+            mtG_chb.Name = "mtG_chb";
+            mtG_chb.Size = new Size(103, 19);
+            mtG_chb.TabIndex = 15;
+            mtG_chb.Text = "Mountain Villa";
+            mtG_chb.UseVisualStyleBackColor = true;
+            mtG_chb.CheckedChanged += expG_chb_CheckedChanged;
             // 
             // ndG_chb
             // 
-            this.ndG_chb.AutoSize = true;
-            this.ndG_chb.Location = new System.Drawing.Point(175, 410);
-            this.ndG_chb.Name = "ndG_chb";
-            this.ndG_chb.Size = new System.Drawing.Size(147, 19);
-            this.ndG_chb.TabIndex = 14;
-            this.ndG_chb.Text = "Ndlunkulu Guesthouse";
-            this.ndG_chb.UseVisualStyleBackColor = true;
+            ndG_chb.AutoSize = true;
+            ndG_chb.Location = new Point(175, 397);
+            ndG_chb.Name = "ndG_chb";
+            ndG_chb.Size = new Size(147, 19);
+            ndG_chb.TabIndex = 14;
+            ndG_chb.Text = "Ndlunkulu Guesthouse";
+            ndG_chb.UseVisualStyleBackColor = true;
+            ndG_chb.CheckedChanged += expG_chb_CheckedChanged;
             // 
             // wbG_chb
             // 
-            this.wbG_chb.AutoSize = true;
-            this.wbG_chb.Location = new System.Drawing.Point(175, 216);
-            this.wbG_chb.Name = "wbG_chb";
-            this.wbG_chb.Size = new System.Drawing.Size(167, 19);
-            this.wbG_chb.TabIndex = 13;
-            this.wbG_chb.Text = "Willow Brooke Guesthouse";
-            this.wbG_chb.UseVisualStyleBackColor = true;
+            wbG_chb.AutoSize = true;
+            wbG_chb.Location = new Point(175, 218);
+            wbG_chb.Name = "wbG_chb";
+            wbG_chb.Size = new Size(167, 19);
+            wbG_chb.TabIndex = 13;
+            wbG_chb.Text = "Willow Brooke Guesthouse";
+            wbG_chb.UseVisualStyleBackColor = true;
+            wbG_chb.CheckedChanged += expG_chb_CheckedChanged;
             // 
             // expG_chb
             // 
-            this.expG_chb.AutoSize = true;
-            this.expG_chb.Location = new System.Drawing.Point(175, 56);
-            this.expG_chb.Name = "expG_chb";
-            this.expG_chb.Size = new System.Drawing.Size(137, 19);
-            this.expG_chb.TabIndex = 12;
-            this.expG_chb.Text = "Explorer Guesthouse ";
-            this.expG_chb.UseVisualStyleBackColor = true;
+            expG_chb.AutoSize = true;
+            expG_chb.Location = new Point(175, 47);
+            expG_chb.Name = "expG_chb";
+            expG_chb.Size = new Size(137, 19);
+            expG_chb.TabIndex = 12;
+            expG_chb.Text = "Explorer Guesthouse ";
+            expG_chb.UseVisualStyleBackColor = true;
+            expG_chb.CheckedChanged += expG_chb_CheckedChanged;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(6, 623);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(157, 136);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(6, 573);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(157, 136);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 11;
+            pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 410);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(157, 136);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(12, 397);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(157, 136);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 10;
+            pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 216);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(157, 136);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(12, 218);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(157, 136);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 136);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 47);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(157, 136);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(910, 39);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 1;
+            dateTimePicker1.Location = new Point(910, 39);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 1;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(815, 39);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 15);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Check in Date";
+            label5.AutoSize = true;
+            label5.Location = new Point(815, 39);
+            label5.Name = "label5";
+            label5.Size = new Size(80, 15);
+            label5.TabIndex = 17;
+            label5.Text = "Check in Date";
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(910, 84);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker2.TabIndex = 18;
+            dateTimePicker2.Location = new Point(910, 84);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(200, 23);
+            dateTimePicker2.TabIndex = 18;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(815, 84);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 15);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Check out Date";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(815, 573);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 40);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Proceed to Activities";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            label6.AutoSize = true;
+            label6.Location = new Point(815, 84);
+            label6.Name = "label6";
+            label6.Size = new Size(88, 15);
+            label6.TabIndex = 19;
+            label6.Text = "Check out Date";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(815, 619);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 40);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Proceed to Checkout";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(815, 619);
+            button2.Name = "button2";
+            button2.Size = new Size(146, 40);
+            button2.TabIndex = 25;
+            button2.Text = "Proceed to Checkout";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(815, 665);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 40);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Add Booking";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(293, 481);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 15);
-            this.label7.TabIndex = 37;
-            this.label7.Text = "R150 extra";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(293, 282);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 15);
-            this.label8.TabIndex = 38;
-            this.label8.Text = "R150 extra";
+            button3.Location = new Point(815, 665);
+            button3.Name = "button3";
+            button3.Size = new Size(146, 40);
+            button3.TabIndex = 26;
+            button3.Text = "Add Booking";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Booking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 749);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "Booking";
-            this.Text = "Booking";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1148, 749);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(label6);
+            Controls.Add(dateTimePicker2);
+            Controls.Add(label5);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(groupBox1);
+            Name = "Booking";
+            Text = "Booking";
+            BackgroundImageChanged += Booking_BackgroundImageChanged;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)nud_EG).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nud_MV).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nud_WBG).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nud_NG).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -491,27 +378,19 @@
         private Label label5;
         private DateTimePicker dateTimePicker2;
         private Label label6;
-        private Button button1;
         private Label label3;
         private Label label2;
-        private Label label4;
         private Button button2;
         private Button button3;
-        private Label label9;
-        private RadioButton resE_rdb;
-        private RadioButton riverE_rdb;
-        private RadioButton mtnE_rdb;
-        private RadioButton resN_rdb;
-        private RadioButton riverN_rdb;
-        private RadioButton mtnN_rdb;
-        private RadioButton resW_rdb;
-        private RadioButton riverW_rdb;
-        private RadioButton mtnW_rdb;
-        private Label label11;
-        private Label label10;
-        private Label label12;
-        private Label label13;
-        private Label label8;
-        private Label label7;
+        private NumericUpDown nud_NG;
+        private NumericUpDown nud_WBG;
+        private NumericUpDown nud_EG;
+        private NumericUpDown nud_MV;
+        private Label label14;
+        private Label label17;
+        private Label label16;
+        private Label label15;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }
